@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni World Map - AlumNet 360</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .map-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 80px;
+        }
+        .map-container img {
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="container">
+            <a href="index.html" class="logo">AlumNet 360</a>
+            <div class="nav-links">
+                <a href="dashboard.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="jobs.html">Jobs & Internships</a>
+                <a href="ai-matchmaking.html">AI Matchmaking</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="leaderboard.html">Leader Board</a>
+                <a href="world-map.html">Alumni World Map</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container map-page-content">
+        <div class="map-container">
+            <img src="worldmap.png" alt="Alumni World Map" id="world-map-image">
+        </div>
+    </main>
+
+    <div id="profile-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-profile-content"></div>
+            <div class="chat-section">
+                <h4>Chat with <span id="chat-name"></span></h4>
+                <div class="chat-window">
+                    <div class="chat-message incoming">Hello, how can I help?</div>
+                    <div class="chat-message outgoing">Hi, I have a question about the hiring process at Google.</div>
+                </div>
+                <input type="text" placeholder="Type a message..." class="chat-input">
+                <button class="chat-send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
